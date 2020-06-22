@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "e99617aa-ed2e-45c8-9264-4fa8d9dd27fe",
+		"name": "EPG API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Programme Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/channels/602c050a-b4a5-11ea-b3de-0242ac130004/programmes/58874dc8-b4a5-11ea-b3de-0242ac130004",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"channels",
+						"602c050a-b4a5-11ea-b3de-0242ac130004",
+						"programmes",
+						"58874dc8-b4a5-11ea-b3de-0242ac130004"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Channels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/channels/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"channels",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Channel Timetable",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/channels/602c050a-b4a5-11ea-b3de-0242ac130004/22-06-2020/Europe-London",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"channels",
+						"602c050a-b4a5-11ea-b3de-0242ac130004",
+						"22-06-2020",
+						"Europe-London"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
